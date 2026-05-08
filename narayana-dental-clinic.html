@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Narayana Dental Clinic – Bommanahalli, Bengaluru | Expert Dental Care</title>
+  <meta name="description" content="Narayana Dental Clinic in Bommanahalli, Bengaluru. 4.9★ rated dental clinic offering implants, whitening, root canals, paediatrics & 18+ services. Book online now.">
+  <meta name="keywords" content="dental clinic bommanahalli, dentist bengaluru, teeth whitening bangalore, dental implants bommanahalli, root canal bangalore, narayana dental">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Narayana Dental Clinic – Bommanahalli, Bengaluru">
+  <meta property="og:description" content="4.9★ rated dental clinic. Expert dental care for all ages. Book your appointment online.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_IN">
+  <link rel="canonical" href="https://narayanadentalclinic.in/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    /* ========== RESET & BASE ========== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: #F7F9F7;
+      color: #1a2e1a;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    button { cursor: pointer; font-family: 'Outfit', sans-serif; }
+    ul { list-style: none; }
+
+    /* ========== CSS VARIABLES ========== */
+    :root {
+      --green: #0F6E56;
+      --green-dark: #0a5040;
+      --green-mid: #1D9E75;
+      --green-light: #E1F5EE;
+      --green-pale: #F0FBF7;
+      --gold: #C4952A;
+      --gold-light: #FDF6E7;
+      --cream: #FAFAF5;
+      --white: #ffffff;
+      --dark: #0D1F0D;
+      --body: #2d3d2d;
+      --muted: #6b7b6b;
+      --border: #dde8dd;
+      --shadow-sm: 0 2px 8px rgba(15,110,86,.08);
+      --shadow-md: 0 8px 32px rgba(15,110,86,.12);
+      --shadow-lg: 0 20px 60px rgba(15,110,86,.15);
+      --radius: 12px;
+      --radius-lg: 20px;
+    }
+
+    /* ========== TYPOGRAPHY ========== */
+    h1, h2, h3, h4 { font-family: 'Cormorant Garamond', serif; font-weight: 600; line-height: 1.2; color: var(--dark); }
+    h1 { font-size: clamp(2.2rem, 5vw, 3.8rem); }
+    h2 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); }
+    h3 { font-size: 1.35rem; }
+    p { color: var(--body); line-height: 1.7; }
+
+    /* ========== UTILITY ========== */
+    .container { max-width: 1140px; margin: 0 auto; padding: 0 1.5rem; }
+    .section-pad { padding: 6rem 0; }
+    .tag {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 11px; font-weight: 600; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--green);
+      background: var(--green-light); padding: 5px 14px;
+      border-radius: 30px; margin-bottom: 1rem;
+    }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 14px 28px; border-radius: 8px;
+      font-size: 15px; font-weight: 500; border: none;
+      transition: all .2s ease;
+    }
+    .btn-green { background: var(--green); color: #fff; }
+    .btn-green:hover { background: var(--green-dark); transform: translateY(-1px); box-shadow: var(--shadow-md); }
+    .btn-outline { background: transparent; color: var(--green); border: 1.5px solid var(--green); }
+    .btn-outline:hover { background: var(--green-light); }
+    .btn-white { background: #fff; color: var(--green); }
+    .btn-white:hover { background: var(--green-light); }
+    .text-center { text-align: center; }
+    .divider { width: 48px; height: 3px; background: var(--green-mid); border-radius: 2px; margin: 1rem 0 1.5rem; }
+    .divider.center { margin: 1rem auto 1.5rem; }
+
+    /* ========== NAVBAR ========== */
+    #navbar {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      background: rgba(255,255,255,.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      transition: box-shadow .3s;
+    }
+    #navbar.scrolled { box-shadow: var(--shadow-md); }
+    .nav-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      height: 70px;
+    }
+    .logo { display: flex; align-items: center; gap: 12px; }
+    .logo-mark {
+      width: 42px; height: 42px; border-radius: 10px;
+      background: var(--green); display: flex; align-items: center;
+      justify-content: center; font-size: 22px;
+    }
+    .logo-name { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 700; color: var(--dark); }
+    .logo-sub { font-size: 11px; color: var(--muted); font-weight: 400; font-family: 'Outfit', sans-serif; }
+    .nav-links { display: flex; align-items: center; gap: 2.5rem; }
+    .nav-links a { font-size: 14px; font-weight: 500; color: var(--body); transition: color .2s; }
+    .nav-links a:hover { color: var(--green); }
+    .nav-cta { background: var(--green); color: #fff; padding: 10px 22px; border-radius: 8px; font-size: 14px; font-weight: 500; border: none; transition: all .2s; }
+    .nav-cta:hover { background: var(--green-dark); }
+    .hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; padding: 4px; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: var(--dark); border-radius: 2px; transition: all .3s; }
+    .mobile-menu {
+      display: none; position: fixed; top: 70px; left: 0; right: 0;
+      background: #fff; border-bottom: 1px solid var(--border);
+      padding: 1.5rem; z-index: 999; flex-direction: column; gap: 1.2rem;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a { font-size: 16px; font-weight: 500; color: var(--body); padding: .5rem 0; border-bottom: 1px solid var(--border); }
+
+    /* ========== HERO ========== */
+    #hero {
+      min-height: 100vh;
+      background: var(--cream);
+      display: flex; align-items: center;
+      padding-top: 70px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-bg-shape {
+      position: absolute; border-radius: 50%;
+      background: var(--green-light); opacity: .5; pointer-events: none;
+    }
+    .hero-bg-shape.s1 { width: 500px; height: 500px; top: -100px; right: -100px; }
+    .hero-bg-shape.s2 { width: 300px; height: 300px; bottom: -80px; left: -80px; opacity: .3; }
+    .hero-inner {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 4rem; align-items: center; position: relative; z-index: 1;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--gold-light); border: 1px solid #e8c97a;
+      color: var(--gold); font-size: 13px; font-weight: 500;
+      padding: 7px 16px; border-radius: 30px; margin-bottom: 1.5rem;
+    }
+    .hero h1 { margin-bottom: 1.2rem; }
+    .hero h1 em { font-style: normal; color: var(--green); }
+    .hero-desc { font-size: 1.05rem; color: var(--muted); max-width: 440px; margin-bottom: 2rem; }
+    .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
+    .hero-trust { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
+    .trust-item { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--muted); }
+    .trust-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green-mid); }
+    .hero-card-wrap { position: relative; }
+    .hero-main-card {
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); padding: 2rem;
+      box-shadow: var(--shadow-lg);
+    }
+    .rating-display { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; }
+    .rating-big { font-family: 'Cormorant Garamond', serif; font-size: 3.5rem; font-weight: 700; color: var(--green); line-height: 1; }
+    .stars-row { color: #f59e0b; font-size: 20px; }
+    .rating-meta p { font-size: 13px; color: var(--muted); }
+    .stat-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.5rem; }
+    .stat-box { background: var(--green-pale); border-radius: 10px; padding: 1rem; }
+    .stat-box .num { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 700; color: var(--green); }
+    .stat-box .lbl { font-size: 12px; color: var(--muted); }
+    .float-badge {
+      position: absolute; background: var(--white);
+      border: 1px solid var(--border); border-radius: 10px;
+      padding: .7rem 1rem; box-shadow: var(--shadow-sm);
+      font-size: 13px; font-weight: 500; color: var(--dark);
+      display: flex; align-items: center; gap: 6px;
+    }
+    .float-badge.top-right { top: -18px; right: -20px; }
+    .float-badge.bot-left { bottom: -18px; left: -20px; }
+
+    /* ========== SERVICES ========== */
+    #services { background: var(--white); }
+    .services-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1.2rem; margin-top: 2.5rem;
+    }
+    .svc-card {
+      background: var(--cream); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 1.5rem;
+      transition: all .25s ease; cursor: default;
+    }
+    .svc-card:hover { border-color: var(--green-mid); box-shadow: var(--shadow-sm); transform: translateY(-2px); background: var(--white); }
+    .svc-emoji { font-size: 28px; margin-bottom: .8rem; }
+    .svc-name { font-size: 15px; font-weight: 600; margin-bottom: .4rem; color: var(--dark); }
+    .svc-desc { font-size: 13px; color: var(--muted); line-height: 1.5; }
+    .services-cta { text-align: center; margin-top: 3rem; }
+
+    /* ========== WHY US ========== */
+    #why { background: var(--green); }
+    #why h2, #why h3, #why p { color: #fff; }
+    #why .tag { background: rgba(255,255,255,.15); color: #fff; }
+    #why .divider { background: rgba(255,255,255,.5); }
+    .why-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.5rem; margin-top: 2.5rem; }
+    .why-card {
+      background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.2);
+      border-radius: var(--radius); padding: 1.5rem;
+    }
+    .why-icon { font-size: 28px; margin-bottom: .8rem; }
+    .why-card h3 { font-size: 1.1rem; margin-bottom: .5rem; color: #fff; }
+    .why-card p { font-size: 13px; color: rgba(255,255,255,.75); }
+
+    /* ========== PROCESS ========== */
+    #process { background: var(--cream); }
+    .process-steps { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0; margin-top: 2.5rem; position: relative; }
+    .process-step { text-align: center; padding: 2rem 1.5rem; position: relative; }
+    .process-step:not(:last-child)::after { content: '→'; position: absolute; right: -8px; top: 50%; transform: translateY(-50%); font-size: 1.5rem; color: var(--green-mid); }
+    .step-circle {
+      width: 60px; height: 60px; border-radius: 50%;
+      background: var(--green-light); border: 2px solid var(--green-mid);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 24px; margin: 0 auto 1rem;
+    }
+    .step-num { font-size: 11px; font-weight: 600; color: var(--green); margin-bottom: .4rem; letter-spacing: .08em; text-transform: uppercase; }
+    .step-title { font-size: 15px; font-weight: 600; color: var(--dark); margin-bottom: .4rem; }
+    .step-desc { font-size: 12px; color: var(--muted); }
+
+    /* ========== REVIEWS ========== */
+    #reviews { background: var(--white); }
+    .reviews-header { display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 2.5rem; }
+    .overall-rating { display: flex; align-items: center; gap: 1.5rem; }
+    .big-num { font-family: 'Cormorant Garamond', serif; font-size: 4rem; font-weight: 700; color: var(--green); line-height: 1; }
+    .star-breakdown p { font-size: 13px; color: var(--muted); }
+    .reviews-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.2rem; }
+    .review-card { background: var(--cream); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem; }
+    .review-stars { color: #f59e0b; font-size: 15px; margin-bottom: .8rem; }
+    .review-text { font-size: 14px; color: var(--body); line-height: 1.65; margin-bottom: 1rem; font-style: italic; }
+    .reviewer-info { display: flex; align-items: center; gap: 10px; }
+    .reviewer-avatar {
+      width: 36px; height: 36px; border-radius: 50%;
+      background: var(--green-light); display: flex; align-items: center;
+      justify-content: center; font-weight: 600; font-size: 14px; color: var(--green);
+    }
+    .reviewer-name { font-size: 13px; font-weight: 600; color: var(--dark); }
+    .reviewer-loc { font-size: 11px; color: var(--muted); }
+
+    /* ========== APPOINTMENT ========== */
+    #appointment { background: var(--cream); }
+    .book-wrap { display: grid; grid-template-columns: 1fr 1.4fr; gap: 3rem; align-items: start; }
+    .book-info h2 { margin-bottom: .5rem; }
+    .book-info p { color: var(--muted); margin-bottom: 1.5rem; font-size: .95rem; }
+    .book-info-list { display: flex; flex-direction: column; gap: .8rem; margin-bottom: 2rem; }
+    .book-info-item { display: flex; align-items: center; gap: .7rem; font-size: 14px; }
+    .bii-icon { font-size: 18px; }
+    .book-form-card {
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); padding: 2rem;
+      box-shadow: var(--shadow-md);
+    }
+    .book-form-card h3 { font-size: 1.3rem; margin-bottom: 1.5rem; }
+    .form-steps { display: flex; margin-bottom: 2rem; border-radius: 8px; overflow: hidden; border: 1px solid var(--border); }
+    .form-step-tab { flex: 1; padding: 10px; text-align: center; font-size: 13px; font-weight: 500; color: var(--muted); background: #f9f9f9; cursor: pointer; transition: all .2s; }
+    .form-step-tab.active { background: var(--green); color: #fff; }
+    .form-step-tab.done { background: var(--green-light); color: var(--green); }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .fg { display: flex; flex-direction: column; gap: 5px; }
+    .fg.full { grid-column: 1 / -1; }
+    label { font-size: 13px; font-weight: 500; color: var(--dark); }
+    input, select, textarea {
+      border: 1px solid var(--border); border-radius: 8px;
+      padding: 11px 14px; font-size: 14px;
+      font-family: 'Outfit', sans-serif; background: var(--cream);
+      color: var(--dark); outline: none; width: 100%; transition: border-color .2s;
+    }
+    input:focus, select:focus, textarea:focus { border-color: var(--green); background: var(--white); }
+    textarea { resize: vertical; min-height: 80px; }
+    .time-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: .5rem; }
+    .ts {
+      border: 1px solid var(--border); border-radius: 7px;
+      padding: 9px 4px; text-align: center; font-size: 12px;
+      font-weight: 500; cursor: pointer; background: var(--cream);
+      color: var(--dark); transition: all .15s;
+    }
+    .ts:hover { border-color: var(--green-mid); background: var(--green-light); }
+    .ts.sel { background: var(--green); color: #fff; border-color: var(--green); }
+    .ts.booked { background: #f3f4f6; color: #b0b8b0; cursor: not-allowed; font-size: 11px; }
+    .step-nav { display: flex; gap: 1rem; margin-top: 1.5rem; }
+    .step-nav .btn { flex: 1; justify-content: center; padding: 13px; font-size: 14px; }
+    .summary-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    .summary-table td { padding: 8px 0; border-bottom: 1px solid var(--border); }
+    .summary-table tr:last-child td { border: none; }
+    .summary-table td:first-child { color: var(--muted); width: 38%; }
+    .summary-table td:last-child { font-weight: 500; }
+    .success-box {
+      display: none; background: var(--green-light); border: 1px solid #9FE1CB;
+      border-radius: 10px; padding: 1.5rem; text-align: center; margin-top: 1.5rem;
+    }
+    .success-box .tick { font-size: 2.5rem; margin-bottom: .5rem; }
+    .success-box h3 { color: var(--green); font-size: 1.2rem; margin-bottom: .4rem; }
+    .success-box p { font-size: 13px; color: var(--muted); }
+
+    /* ========== GALLERY ========== */
+    #gallery { background: var(--white); }
+    .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 2rem; }
+    .gallery-item {
+      border-radius: var(--radius); overflow: hidden;
+      aspect-ratio: 4/3; background: var(--green-light);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 3rem; border: 1px solid var(--border);
+      position: relative;
+    }
+    .gallery-item span { position: absolute; bottom: .7rem; left: .8rem; font-size: 12px; font-weight: 500; color: var(--green); background: rgba(225,245,238,.9); padding: 3px 10px; border-radius: 20px; }
+    .gallery-item:nth-child(1) { font-size: 5rem; }
+    .gallery-item:nth-child(4) { grid-column: span 2; }
+
+    /* ========== FAQ ========== */
+    #faq { background: var(--cream); }
+    .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 2rem; }
+    .faq-item { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.3rem; cursor: pointer; }
+    .faq-item:hover { border-color: var(--green-mid); }
+    .faq-q { display: flex; justify-content: space-between; align-items: center; }
+    .faq-q p { font-size: 15px; font-weight: 500; color: var(--dark); padding-right: 1rem; }
+    .faq-toggle { font-size: 18px; color: var(--green); min-width: 20px; transition: transform .3s; }
+    .faq-a { font-size: 13px; color: var(--muted); margin-top: .7rem; line-height: 1.6; display: none; }
+    .faq-item.open .faq-a { display: block; }
+    .faq-item.open .faq-toggle { transform: rotate(45deg); }
+
+    /* ========== CONTACT ========== */
+    #contact { background: var(--white); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
+    .contact-info h2 { margin-bottom: .5rem; }
+    .contact-info > p { color: var(--muted); margin-bottom: 2rem; }
+    .contact-items { display: flex; flex-direction: column; gap: 1.2rem; }
+    .ci { display: flex; gap: 1rem; align-items: flex-start; }
+    .ci-icon {
+      width: 44px; height: 44px; min-width: 44px;
+      background: var(--green-light); border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px;
+    }
+    .ci-label { font-size: 12px; color: var(--muted); margin-bottom: 3px; }
+    .ci-value { font-size: 15px; font-weight: 500; color: var(--dark); }
+    .ci-value a { color: var(--green); }
+    .hours-card { background: var(--cream); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem; margin-top: 2rem; }
+    .hours-card h4 { font-size: 1rem; margin-bottom: 1rem; }
+    .hours-table { width: 100%; border-collapse: collapse; }
+    .hours-table tr td { padding: 7px 0; border-bottom: 1px solid var(--border); font-size: 13px; }
+    .hours-table tr:last-child td { border: none; }
+    .hours-table td:last-child { text-align: right; color: var(--green); font-weight: 500; }
+    .map-card {
+      border-radius: var(--radius-lg); overflow: hidden;
+      border: 1px solid var(--border); box-shadow: var(--shadow-sm);
+    }
+    .map-embed {
+      background: var(--green-light); height: 280px;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      gap: .5rem; cursor: pointer; transition: background .2s;
+    }
+    .map-embed:hover { background: #c5eadc; }
+    .map-embed span:first-child { font-size: 3rem; }
+    .map-embed p { font-size: 15px; font-weight: 600; color: var(--green); }
+    .map-embed small { font-size: 12px; color: var(--muted); }
+    .map-footer { padding: 1.2rem 1.5rem; display: flex; justify-content: space-between; align-items: center; background: var(--white); border-top: 1px solid var(--border); }
+    .map-footer p { font-size: 13px; color: var(--muted); }
+
+    /* ========== FOOTER ========== */
+    footer { background: var(--dark); color: rgba(255,255,255,.8); }
+    .footer-top { padding: 3rem 0 2rem; display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 2rem; }
+    .footer-brand .logo-name { color: #fff; font-size: 1.3rem; }
+    .footer-brand .logo-sub { color: rgba(255,255,255,.5); }
+    .footer-brand p { font-size: 13px; color: rgba(255,255,255,.55); margin-top: 1rem; line-height: 1.6; max-width: 240px; }
+    .footer-col h4 { font-family: 'Outfit', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: rgba(255,255,255,.5); margin-bottom: 1rem; }
+    .footer-col ul li { margin-bottom: .6rem; }
+    .footer-col ul li a { font-size: 14px; color: rgba(255,255,255,.7); transition: color .2s; }
+    .footer-col ul li a:hover { color: #fff; }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,.1); padding: 1.2rem 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: .5rem; }
+    .footer-bottom p { font-size: 12px; color: rgba(255,255,255,.4); }
+    .footer-badge { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; color: rgba(255,255,255,.4); }
+
+    /* ========== STICKY CTA BAR (mobile) ========== */
+    .sticky-bar {
+      display: none; position: fixed; bottom: 0; left: 0; right: 0;
+      background: var(--white); border-top: 1px solid var(--border);
+      padding: .8rem 1rem; z-index: 999;
+      display: flex; gap: .8rem;
+    }
+    .sticky-bar .btn { flex: 1; justify-content: center; font-size: 14px; padding: 12px; }
+
+    /* ========== SCROLL ANIMATIONS ========== */
+    .fade-up { opacity: 0; transform: translateY(24px); transition: opacity .55s ease, transform .55s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+    /* ========== RESPONSIVE ========== */
+    @media (max-width: 900px) {
+      .hero-inner { grid-template-columns: 1fr; text-align: center; }
+      .hero-actions { justify-content: center; }
+      .hero-trust { justify-content: center; }
+      .hero-card-wrap { max-width: 420px; margin: 0 auto; }
+      .float-badge.top-right { right: -10px; top: -10px; }
+      .float-badge.bot-left { left: -10px; bottom: -10px; }
+      .book-wrap { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .faq-grid { grid-template-columns: 1fr; }
+      .footer-top { grid-template-columns: 1fr 1fr; }
+      .process-step:not(:last-child)::after { display: none; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; }
+      .gallery-item:nth-child(4) { grid-column: span 1; }
+    }
+    @media (max-width: 640px) {
+      .nav-links { display: none; }
+      .nav-cta { display: none; }
+      .hamburger { display: flex; }
+      .section-pad { padding: 4rem 0; }
+      .form-grid { grid-template-columns: 1fr; }
+      .time-grid { grid-template-columns: repeat(3, 1fr); }
+      .reviews-grid { grid-template-columns: 1fr; }
+      .footer-top { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-columns: 1fr; }
+      .gallery-item:nth-child(4) { grid-column: span 1; }
+      .reviews-header { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<nav id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#hero" class="logo">
+        <div class="logo-mark">🦷</div>
+        <div>
+          <div class="logo-name">Narayana Dental</div>
+          <div class="logo-sub">Bommanahalli, Bengaluru</div>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#appointment">Appointment</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-cta" onclick="document.getElementById('appointment').scrollIntoView({behavior:'smooth'})">Book Appointment</button>
+      <button class="hamburger" id="hamburgerBtn" onclick="toggleMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services" onclick="closeMenu()">Services</a>
+  <a href="#reviews" onclick="closeMenu()">Reviews</a>
+  <a href="#appointment" onclick="closeMenu()">Book Appointment</a>
+  <a href="#faq" onclick="closeMenu()">FAQ</a>
+  <a href="#contact" onclick="closeMenu()">Contact</a>
+  <a href="tel:09591961691" style="color:var(--green);font-weight:600">📞 095919 61691</a>
+</div>
+
+<!-- ========== HERO ========== -->
+<section id="hero">
+  <div class="hero-bg-shape s1"></div>
+  <div class="hero-bg-shape s2"></div>
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">⭐ 4.9 on Google · 398 verified reviews</div>
+        <h1>Your Smile Deserves <em>Expert Care</em></h1>
+        <p class="hero-desc">Comprehensive dental treatments for the whole family. Modern equipment, experienced dentists, and a warm, welcoming environment in the heart of Bommanahalli.</p>
+        <div class="hero-actions">
+          <button class="btn btn-green" onclick="document.getElementById('appointment').scrollIntoView({behavior:'smooth'})">📅 Book Appointment</button>
+          <a href="tel:09591961691" class="btn btn-outline">📞 Call Now</a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-item"><div class="trust-dot"></div>18+ treatments</div>
+          <div class="trust-item"><div class="trust-dot"></div>All age groups</div>
+          <div class="trust-item"><div class="trust-dot"></div>Emergency care</div>
+        </div>
+      </div>
+      <div class="hero-card-wrap">
+        <div class="hero-main-card">
+          <div class="rating-display">
+            <div class="rating-big">4.9</div>
+            <div class="rating-meta">
+              <div class="stars-row">★★★★★</div>
+              <p>398 Google Reviews</p>
+              <p style="color:var(--green);font-size:12px;margin-top:2px;font-weight:500">Top-rated in Bommanahalli</p>
+            </div>
+          </div>
+          <p style="font-size:14px;color:var(--muted);font-style:italic;border-left:3px solid var(--green-mid);padding-left:12px;margin-bottom:1rem">"Good service and friendly doctor. Really good experience."</p>
+          <div class="stat-row">
+            <div class="stat-box"><div class="num">18+</div><div class="lbl">Dental Services</div></div>
+            <div class="stat-box"><div class="num">398+</div><div class="lbl">Happy Patients</div></div>
+            <div class="stat-box"><div class="num">10+</div><div class="lbl">Years Experience</div></div>
+            <div class="stat-box"><div class="num">100%</div><div class="lbl">Online Booking</div></div>
+          </div>
+        </div>
+        <div class="float-badge top-right">✅ Open Today</div>
+        <div class="float-badge bot-left">🚨 Emergency Care Available</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SERVICES ========== -->
+<section id="services" class="section-pad">
+  <div class="container">
+    <div class="text-center fade-up">
+      <div class="tag">Our Services</div>
+      <h2>Complete Dental Care Under One Roof</h2>
+      <div class="divider center"></div>
+      <p style="max-width:520px;margin:0 auto;color:var(--muted)">From routine check-ups to advanced cosmetic and surgical procedures — we offer 18+ treatments for patients of all ages.</p>
+    </div>
+    <div class="services-grid">
+      <div class="svc-card fade-up"><div class="svc-emoji">✨</div><div class="svc-name">Teeth Whitening</div><div class="svc-desc">Professional laser & bleaching for a brighter, whiter smile</div></div>
+      <div class="svc-card fade-up"><div class="svc-emoji">🔗</div><div class="svc-name">Dental Bonding</div><div class="svc-desc">Fix chips, cracks and gaps with natural-looking resin</div></div>
+      <div class="svc-card fade-up"><div class="svc-emoji">🔍</div><div class="svc-name">Check-ups</div><div class="svc-desc">Comprehensive oral health exams and preventive care</div></div>
+      <div class="svc-card fade-up"><div class="svc-emoji">💎</div><div class="svc-name">Cosmetic Dentistry</div><div class="svc-desc">Smile makeovers and full aesthetic transformations</div></div>
+      <div class="svc-card fade-up"><div class="svc-emoji">🦷</div><div class="svc-name">Dental Implants</div><div class="svc-desc">Permanent, natural-looking tooth replacement solutions</div></div>
+      <div class="svc-card fade-up"><div class="svc-emoji">🪥</div><div class="svc-name">Dentures & Bridges</div><div class="svc-desc">Full and partial removable denture solutions</div></div>
+      <div class="svc-card fade-up"><div class="svc-emoji">🚨</div><div class="svc-name">Emergency Care</div><div class="svc-desc">Same-day urgent treatment for dental emergencies</div></div>
+      <div class="svc-card fade-up"><div class="svc-emoji">🔧</div><div class="svc-name">Extractions</div><div class="svc-desc">Safe and gentle tooth removal including wisdom teeth</div></div>
+      <div class="svc-card fade-up"><div class="svc-emoji">🩹</div><div class="svc-name">Fillings & Sealants</div><div class="svc-desc">Tooth-colored fillings and cavity prevention sealants</div></div>
+      <div class="svc-card fade-up"><div class="svc-emoji">🥊</div><div class="svc-name">Mouth Guards</div><div class="svc-desc">Custom-fit sports guards and night bruxism guards</div></div>
+      <div class="svc-card fade-up"><div class="svc-emoji">⚕️</div><div class="svc-name">Oral Surgery</div><div class="svc-desc">Complex surgical procedures by experienced specialists</div></div>
+      <div class="svc-card fade-up"><div class="svc-emoji">👶</div><div class="svc-name">Paediatric Dentistry</div><div class="svc-desc">Gentle, child-friendly dental care from first tooth</div></div>
+      <div class="svc-card fade-up"><div class="svc-emoji">🔬</div><div class="svc-name">Root Canal Therapy</div><div class="svc-desc">Pain-free root canal treatment to save infected teeth</div></div>
+      <div class="svc-card fade-up"><div class="svc-emoji">🧹</div><div class="svc-name">Teeth Cleaning</div><div class="svc-desc">Professional scaling, polishing and tartar removal</div></div>
+      <div class="svc-card fade-up"><div class="svc-emoji">✂️</div><div class="svc-name">Teeth Reshaping</div><div class="svc-desc">Subtle contouring for a perfectly proportioned smile</div></div>
+      <div class="svc-card fade-up"><div class="svc-emoji">👑</div><div class="svc-name">Veneers & Crowns</div><div class="svc-desc">Porcelain veneers and ceramic crowns for restoration</div></div>
+      <div class="svc-card fade-up"><div class="svc-emoji">📡</div><div class="svc-name">Dental X-Rays</div><div class="svc-desc">Low-radiation digital X-rays for accurate diagnosis</div></div>
+      <div class="svc-card fade-up"><div class="svc-emoji">💻</div><div class="svc-name">Online Booking</div><div class="svc-desc">Book appointments 24/7 from your phone or computer</div></div>
+    </div>
+    <div class="services-cta fade-up">
+      <button class="btn btn-green" onclick="document.getElementById('appointment').scrollIntoView({behavior:'smooth'})">Book Any Service →</button>
+    </div>
+  </div>
+</section>
+
+<!-- ========== WHY US ========== -->
+<section id="why" class="section-pad">
+  <div class="container">
+    <div class="text-center fade-up">
+      <div class="tag">Why Choose Us</div>
+      <h2>Care You Can Trust</h2>
+      <div class="divider center" style="background:rgba(255,255,255,.5)"></div>
+    </div>
+    <div class="why-grid">
+      <div class="why-card fade-up"><div class="why-icon">🏆</div><h3>4.9★ Rated</h3><p>One of the highest-rated dental clinics in Bommanahalli with 398 genuine patient reviews.</p></div>
+      <div class="why-card fade-up"><div class="why-icon">💉</div><h3>Pain-Free Treatments</h3><p>Modern anaesthesia and gentle techniques ensure a comfortable, anxiety-free experience.</p></div>
+      <div class="why-card fade-up"><div class="why-icon">🧑‍⚕️</div><h3>Experienced Doctors</h3><p>Qualified dental surgeons with 10+ years of clinical experience across all specialisations.</p></div>
+      <div class="why-card fade-up"><div class="why-icon">🔬</div><h3>Modern Equipment</h3><p>Digital X-rays, sterilised instruments, and up-to-date technology for the best outcomes.</p></div>
+      <div class="why-card fade-up"><div class="why-icon">👨‍👩‍👧‍👦</div><h3>Family-Friendly</h3><p>We treat patients of all ages — from toddlers to seniors — with equal care and patience.</p></div>
+      <div class="why-card fade-up"><div class="why-icon">📍</div><h3>Conveniently Located</h3><p>Easily accessible on Hosur Road, Bommanahalli with nearby parking and public transport.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PROCESS ========== -->
+<section id="process" class="section-pad">
+  <div class="container">
+    <div class="text-center fade-up">
+      <div class="tag">How It Works</div>
+      <h2>Your Visit, Step by Step</h2>
+      <div class="divider center"></div>
+    </div>
+    <div class="process-steps">
+      <div class="process-step fade-up">
+        <div class="step-circle">📅</div>
+        <div class="step-num">Step 01</div>
+        <div class="step-title">Book Online</div>
+        <div class="step-desc">Choose your service, date and preferred time slot — all in under 2 minutes.</div>
+      </div>
+      <div class="process-step fade-up">
+        <div class="step-circle">📋</div>
+        <div class="step-num">Step 02</div>
+        <div class="step-title">Confirmation</div>
+        <div class="step-desc">We'll call you to confirm your appointment and answer any questions.</div>
+      </div>
+      <div class="process-step fade-up">
+        <div class="step-circle">🏥</div>
+        <div class="step-num">Step 03</div>
+        <div class="step-title">Visit the Clinic</div>
+        <div class="step-desc">Arrive at Hosur Road. Our friendly staff will welcome you at the desk.</div>
+      </div>
+      <div class="process-step fade-up">
+        <div class="step-circle">🦷</div>
+        <div class="step-num">Step 04</div>
+        <div class="step-title">Treatment</div>
+        <div class="step-desc">The doctor examines and performs your chosen procedure with full care.</div>
+      </div>
+      <div class="process-step fade-up">
+        <div class="step-circle">😊</div>
+        <div class="step-num">Step 05</div>
+        <div class="step-title">Leave Smiling</div>
+        <div class="step-desc">Get post-care instructions and schedule your next visit if needed.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== REVIEWS ========== -->
+<section id="reviews" class="section-pad">
+  <div class="container">
+    <div class="reviews-header fade-up">
+      <div>
+        <div class="tag">Patient Reviews</div>
+        <h2>What Our Patients Say</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="overall-rating">
+        <div class="big-num">4.9</div>
+        <div class="star-breakdown">
+          <div style="color:#f59e0b;font-size:22px">★★★★★</div>
+          <p>398 verified Google reviews</p>
+          <p style="color:var(--green);font-size:12px;font-weight:500;margin-top:2px">Top-rated in Bommanahalli</p>
+        </div>
+      </div>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card fade-up">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Good service and friendly doctor. Really good experience. The dentist explained everything clearly and made me feel completely at ease."</p>
+        <div class="reviewer-info"><div class="reviewer-avatar">PR</div><div><div class="reviewer-name">Priya R.</div><div class="reviewer-loc">Bommanahalli</div></div></div>
+      </div>
+      <div class="review-card fade-up">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Got my root canal done here. The doctor was extremely skilled and the procedure was completely painless. The clinic is clean and well-equipped."</p>
+        <div class="reviewer-info"><div class="reviewer-avatar">AK</div><div><div class="reviewer-name">Arun K.</div><div class="reviewer-loc">HSR Layout</div></div></div>
+      </div>
+      <div class="review-card fade-up">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Took my two kids here for check-ups. Staff is very patient and gentle with children. They made the kids feel totally comfortable. Highly recommend for families!"</p>
+        <div class="reviewer-info"><div class="reviewer-avatar">SM</div><div><div class="reviewer-name">Sunitha M.</div><div class="reviewer-loc">Silk Board</div></div></div>
+      </div>
+      <div class="review-card fade-up">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Had teeth whitening done here. The results are absolutely amazing! Very professional setup and the doctor ensures maximum comfort throughout the session."</p>
+        <div class="reviewer-info"><div class="reviewer-avatar">RD</div><div><div class="reviewer-name">Rahul D.</div><div class="reviewer-loc">BTM Layout</div></div></div>
+      </div>
+      <div class="review-card fade-up">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Had a dental emergency and they fit me in same-day. Very grateful for the quick response. Great team, modern facilities, and excellent care throughout."</p>
+        <div class="reviewer-info"><div class="reviewer-avatar">KN</div><div><div class="reviewer-name">Kavitha N.</div><div class="reviewer-loc">Electronic City</div></div></div>
+      </div>
+      <div class="review-card fade-up">
+        <div class="review-stars">★★★★☆</div>
+        <p class="review-text">"Treatment quality is very good. Waiting time can be a bit long on weekends, but the doctor takes time with each patient and doesn't rush — which I appreciate."</p>
+        <div class="reviewer-info"><div class="reviewer-avatar">MF</div><div><div class="reviewer-name">Mohammed F.</div><div class="reviewer-loc">Bommanahalli</div></div></div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:2.5rem" class="fade-up">
+      <a href="https://g.page/r/narayanadentalclinic/review" target="_blank" class="btn btn-outline">Leave Us a Review on Google →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== APPOINTMENT ========== -->
+<section id="appointment" class="section-pad">
+  <div class="container">
+    <div class="book-wrap">
+      <div class="book-info fade-up">
+        <div class="tag">Online Booking</div>
+        <h2>Book Your Appointment</h2>
+        <div class="divider"></div>
+        <p>Schedule your visit in minutes. We'll confirm your slot within 2 hours during clinic hours.</p>
+        <div class="book-info-list">
+          <div class="book-info-item"><div class="bii-icon">📍</div><span>Hosur Road, Opp Prasanth Hospital, Bommanahalli</span></div>
+          <div class="book-info-item"><div class="bii-icon">📞</div><a href="tel:09591961691" style="color:var(--green);font-weight:600">095919 61691</a></div>
+          <div class="book-info-item"><div class="bii-icon">🕐</div><span>Mon–Fri: 9:30 AM – 7:30 PM</span></div>
+          <div class="book-info-item"><div class="bii-icon">🕐</div><span>Saturday: 9:30 AM – 6:00 PM</span></div>
+          <div class="book-info-item"><div class="bii-icon">🕐</div><span>Sunday: 10:00 AM – 2:00 PM</span></div>
+          <div class="book-info-item"><div class="bii-icon">🚨</div><span>Emergency care available — call anytime</span></div>
+        </div>
+        <div style="background:var(--green-light);border-radius:10px;padding:1.2rem;font-size:13px;color:var(--green)">
+          <strong>First visit?</strong> New patients receive a complimentary dental assessment with any booked appointment. Just mention it when booking.
+        </div>
+      </div>
+
+      <div class="book-form-card fade-up">
+        <h3>Schedule Your Visit</h3>
+        <div class="form-steps">
+          <div class="form-step-tab active" id="tab1">1. Your Details</div>
+          <div class="form-step-tab" id="tab2">2. Date & Time</div>
+          <div class="form-step-tab" id="tab3">3. Confirm</div>
+        </div>
+
+        <!-- STEP 1 -->
+        <div id="s1">
+          <div class="form-grid">
+            <div class="fg"><label>Full Name *</label><input type="text" id="f-name" placeholder="Your full name"></div>
+            <div class="fg"><label>Phone *</label><input type="tel" id="f-phone" placeholder="+91 98xxx xxxxx"></div>
+            <div class="fg"><label>Email</label><input type="email" id="f-email" placeholder="your@email.com"></div>
+            <div class="fg"><label>Age</label><input type="number" id="f-age" placeholder="e.g. 30" min="1" max="120"></div>
+            <div class="fg full"><label>Service Required *</label>
+              <select id="f-service">
+                <option value="">Select a treatment...</option>
+                <option>Teeth Whitening</option>
+                <option>Dental Implants</option>
+                <option>Root Canal Therapy</option>
+                <option>Teeth Cleaning / Scaling</option>
+                <option>Dental Check-up</option>
+                <option>Tooth Filling</option>
+                <option>Veneers & Crowns</option>
+                <option>Extractions</option>
+                <option>Dental Bonding</option>
+                <option>Mouth Guards</option>
+                <option>Oral Surgery</option>
+                <option>Paediatric Dentistry</option>
+                <option>Dentures & Bridges</option>
+                <option>Emergency Care</option>
+                <option>Dental X-Ray</option>
+                <option>Cosmetic Consultation</option>
+                <option>Other / Not Sure</option>
+              </select>
+            </div>
+            <div class="fg full"><label>Notes for Doctor</label><textarea id="f-notes" placeholder="Any concerns, allergies, previous dental history, or specific requests..."></textarea></div>
+          </div>
+          <div class="step-nav">
+            <button class="btn btn-green" onclick="toStep2()">Next: Choose Time →</button>
+          </div>
+        </div>
+
+        <!-- STEP 2 -->
+        <div id="s2" style="display:none">
+          <div class="form-grid">
+            <div class="fg"><label>Preferred Date *</label><input type="date" id="f-date"></div>
+            <div class="fg"><label>Visit Type</label>
+              <select id="f-type"><option>In-Clinic Visit</option><option>Online Consultation</option></select>
+            </div>
+          </div>
+          <div style="margin-top:1.2rem">
+            <label style="display:block;margin-bottom:.7rem">Available Time Slots</label>
+            <div class="time-grid">
+              <button class="ts" onclick="pickTime(this)">9:30 AM</button>
+              <button class="ts" onclick="pickTime(this)">10:00 AM</button>
+              <button class="ts booked" disabled>10:30 AM</button>
+              <button class="ts" onclick="pickTime(this)">11:00 AM</button>
+              <button class="ts" onclick="pickTime(this)">11:30 AM</button>
+              <button class="ts booked" disabled>12:00 PM</button>
+              <button class="ts" onclick="pickTime(this)">2:30 PM</button>
+              <button class="ts" onclick="pickTime(this)">3:00 PM</button>
+              <button class="ts booked" disabled>3:30 PM</button>
+              <button class="ts" onclick="pickTime(this)">4:00 PM</button>
+              <button class="ts" onclick="pickTime(this)">4:30 PM</button>
+              <button class="ts" onclick="pickTime(this)">5:00 PM</button>
+              <button class="ts" onclick="pickTime(this)">5:30 PM</button>
+              <button class="ts" onclick="pickTime(this)">6:00 PM</button>
+              <button class="ts booked" disabled>6:30 PM</button>
+              <button class="ts" onclick="pickTime(this)">7:00 PM</button>
+            </div>
+            <p style="font-size:11px;color:var(--muted);margin-top:.5rem">Gray = already booked</p>
+          </div>
+          <div class="step-nav">
+            <button class="btn btn-outline" onclick="toStep1()">← Back</button>
+            <button class="btn btn-green" onclick="toStep3()">Review Booking →</button>
+          </div>
+        </div>
+
+        <!-- STEP 3 -->
+        <div id="s3" style="display:none">
+          <div style="background:var(--cream);border:1px solid var(--border);border-radius:10px;padding:1.3rem;margin-bottom:1rem">
+            <p style="font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--green);margin-bottom:.8rem">Booking Summary</p>
+            <table class="summary-table">
+              <tr><td>Patient</td><td id="su-name"></td></tr>
+              <tr><td>Phone</td><td id="su-phone"></td></tr>
+              <tr><td>Service</td><td id="su-service"></td></tr>
+              <tr><td>Date</td><td id="su-date"></td></tr>
+              <tr><td>Time</td><td id="su-time" style="color:var(--green)"></td></tr>
+              <tr><td>Visit Type</td><td id="su-type"></td></tr>
+            </table>
+          </div>
+          <div style="background:var(--green-light);border-radius:8px;padding:1rem;font-size:13px;margin-bottom:1rem">
+            <strong style="color:var(--green)">📍 Narayana Dental Clinic</strong><br>
+            <span style="color:var(--muted)">Katha No.111/1, Hosur Road, Opp Prasanth Hospital, Bommanahalli – 560068</span><br>
+            <span style="color:var(--green);font-weight:500">📞 095919 61691</span>
+          </div>
+          <div class="step-nav">
+            <button class="btn btn-outline" onclick="toStep2back()">← Edit</button>
+            <button class="btn btn-green" id="confirmBtn" onclick="confirmBooking()">✅ Confirm Appointment</button>
+          </div>
+          <div class="success-box" id="successBox">
+            <div class="tick">🎉</div>
+            <h3>Appointment Confirmed!</h3>
+            <p>Thank you! We'll call <strong id="su-phone2"></strong> to confirm your slot. See you soon!</p>
+            <button class="btn btn-outline" style="margin-top:1rem;font-size:13px;padding:10px 20px" onclick="resetForm()">Book Another →</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== GALLERY ========== -->
+<section id="gallery" class="section-pad">
+  <div class="container">
+    <div class="text-center fade-up">
+      <div class="tag">Our Clinic</div>
+      <h2>A Comfortable, Modern Space</h2>
+      <div class="divider center"></div>
+    </div>
+    <div class="gallery-grid fade-up">
+      <div class="gallery-item" style="font-size:4rem;flex-direction:column;gap:.3rem;background:linear-gradient(135deg,#E1F5EE,#c5eadc)">🦷<span>Reception</span></div>
+      <div class="gallery-item" style="background:linear-gradient(135deg,#f0fdf4,#d1fae5)">🔬<span>Treatment Room</span></div>
+      <div class="gallery-item" style="background:linear-gradient(135deg,#FDF6E7,#fef3c7)">💎<span>Cosmetic Suite</span></div>
+      <div class="gallery-item" style="background:linear-gradient(135deg,#E1F5EE,#a7f3d0)">🧹<span>Hygiene Bay</span></div>
+      <div class="gallery-item" style="background:linear-gradient(135deg,#f0fdf4,#bbf7d0)">📡<span>Digital X-Ray</span></div>
+    </div>
+    <p style="text-align:center;margin-top:1.2rem;font-size:13px;color:var(--muted)">Visit us at Hosur Road, Bommanahalli to see our fully equipped clinic in person.</p>
+  </div>
+</section>
+
+<!-- ========== FAQ ========== -->
+<section id="faq" class="section-pad">
+  <div class="container">
+    <div class="text-center fade-up">
+      <div class="tag">FAQ</div>
+      <h2>Frequently Asked Questions</h2>
+      <div class="divider center"></div>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item fade-up" onclick="toggleFaq(this)">
+        <div class="faq-q"><p>How do I book an appointment?</p><span class="faq-toggle">+</span></div>
+        <div class="faq-a">You can book online using the form on this page, or call us at 095919 61691. We also accept walk-ins subject to availability.</div>
+      </div>
+      <div class="faq-item fade-up" onclick="toggleFaq(this)">
+        <div class="faq-q"><p>Do you treat children?</p><span class="faq-toggle">+</span></div>
+        <div class="faq-a">Yes! We offer dedicated paediatric dentistry for children from their first tooth onwards. Our doctors are trained to keep children calm and comfortable throughout treatment.</div>
+      </div>
+      <div class="faq-item fade-up" onclick="toggleFaq(this)">
+        <div class="faq-q"><p>Is teeth whitening painful?</p><span class="faq-toggle">+</span></div>
+        <div class="faq-a">Professional teeth whitening at our clinic is generally comfortable. Some patients experience mild sensitivity during or after the procedure, which subsides within 24–48 hours.</div>
+      </div>
+      <div class="faq-item fade-up" onclick="toggleFaq(this)">
+        <div class="faq-q"><p>How long does a root canal take?</p><span class="faq-toggle">+</span></div>
+        <div class="faq-a">Most root canal treatments at our clinic are completed in 1–2 sittings of 60–90 minutes each, depending on the complexity. Modern anaesthesia ensures a pain-free experience.</div>
+      </div>
+      <div class="faq-item fade-up" onclick="toggleFaq(this)">
+        <div class="faq-q"><p>Do you offer dental implants?</p><span class="faq-toggle">+</span></div>
+        <div class="faq-a">Yes, we provide high-quality dental implants as a permanent tooth replacement solution. A consultation is required to assess suitability and create a personalised treatment plan.</div>
+      </div>
+      <div class="faq-item fade-up" onclick="toggleFaq(this)">
+        <div class="faq-q"><p>What should I do in a dental emergency?</p><span class="faq-toggle">+</span></div>
+        <div class="faq-a">Call us immediately at 095919 61691. We offer same-day emergency care for toothaches, broken teeth, knocked-out teeth, and other urgent dental issues.</div>
+      </div>
+      <div class="faq-item fade-up" onclick="toggleFaq(this)">
+        <div class="faq-q"><p>How often should I visit the dentist?</p><span class="faq-toggle">+</span></div>
+        <div class="faq-a">We recommend a dental check-up and professional cleaning every 6 months for most adults and children. Patients with specific conditions may need more frequent visits.</div>
+      </div>
+      <div class="faq-item fade-up" onclick="toggleFaq(this)">
+        <div class="faq-q"><p>Are your prices reasonable?</p><span class="faq-toggle">+</span></div>
+        <div class="faq-a">We strive to provide high-quality care at fair, transparent prices. All charges are discussed with you before treatment begins. We do not believe in hidden fees or surprises.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CONTACT ========== -->
+<section id="contact" class="section-pad">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info fade-up">
+        <div class="tag">Find Us</div>
+        <h2>Get in Touch</h2>
+        <div class="divider"></div>
+        <p>We're conveniently located on Hosur Road, Bommanahalli — easily accessible from HSR Layout, Electronic City, and Silk Board.</p>
+        <div class="contact-items">
+          <div class="ci">
+            <div class="ci-icon">📍</div>
+            <div>
+              <div class="ci-label">Address</div>
+              <div class="ci-value">Katha No.111/1, New No 29, Old No 49<br>Hosur Road, Opp: Prasanth Hospital<br>Bommanahalli, Bengaluru – 560068</div>
+            </div>
+          </div>
+          <div class="ci">
+            <div class="ci-icon">📞</div>
+            <div>
+              <div class="ci-label">Phone / WhatsApp</div>
+              <div class="ci-value"><a href="tel:09591961691">095919 61691</a></div>
+            </div>
+          </div>
+          <div class="ci">
+            <div class="ci-icon">🌐</div>
+            <div>
+              <div class="ci-label">Online Booking</div>
+              <div class="ci-value"><a href="#appointment">Book via this website →</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="hours-card">
+          <h4>Clinic Hours</h4>
+          <table class="hours-table">
+            <tr><td>Monday – Friday</td><td>9:30 AM – 7:30 PM</td></tr>
+            <tr><td>Saturday</td><td>9:30 AM – 6:00 PM</td></tr>
+            <tr><td>Sunday</td><td>10:00 AM – 2:00 PM</td></tr>
+            <tr><td>Holidays</td><td style="color:var(--muted)">Call to confirm</td></tr>
+          </table>
+          <p style="margin-top:.8rem;font-size:12px;color:var(--green);font-weight:500">🚨 Emergency care available — call 095919 61691</p>
+        </div>
+      </div>
+      <div class="fade-up">
+        <div class="map-card">
+          <div class="map-embed" onclick="window.open('https://maps.google.com/?q=Narayana+Dental+Clinic+Hosur+Road+Bommanahalli+Bengaluru+Karnataka','_blank')">
+            <span>🗺️</span>
+            <p>Open in Google Maps</p>
+            <small>Hosur Road, Opp Prasanth Hospital, Bommanahalli</small>
+          </div>
+          <div class="map-footer">
+            <p>📍 Bommanahalli, Bengaluru 560068</p>
+            <a href="https://maps.google.com/?q=Narayana+Dental+Clinic+Hosur+Road+Bommanahalli+Bengaluru" target="_blank" class="btn btn-outline" style="padding:8px 16px;font-size:13px">Directions →</a>
+          </div>
+        </div>
+        <div style="background:var(--green);border-radius:var(--radius-lg);padding:1.8rem;text-align:center;margin-top:1.2rem">
+          <h3 style="color:#fff;font-size:1.4rem;margin-bottom:.5rem">Ready to book?</h3>
+          <p style="color:rgba(255,255,255,.8);font-size:14px;margin-bottom:1.2rem">Join 398+ happy patients. Schedule your visit today.</p>
+          <div style="display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap">
+            <button class="btn btn-white" onclick="document.getElementById('appointment').scrollIntoView({behavior:'smooth'})">📅 Book Online</button>
+            <a href="tel:09591961691" class="btn" style="background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.5)">📞 Call Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo" style="margin-bottom:1rem">
+          <div class="logo-mark">🦷</div>
+          <div>
+            <div class="logo-name">Narayana Dental</div>
+            <div class="logo-sub">Bommanahalli, Bengaluru</div>
+          </div>
+        </div>
+        <p>Expert dental care for all ages. Trusted by 398+ patients with a 4.9★ Google rating. Located on Hosur Road, Bommanahalli.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Teeth Whitening</a></li>
+          <li><a href="#services">Dental Implants</a></li>
+          <li><a href="#services">Root Canal</a></li>
+          <li><a href="#services">Veneers & Crowns</a></li>
+          <li><a href="#services">Teeth Cleaning</a></li>
+          <li><a href="#services">Emergency Care</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#services">All Services</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#appointment">Book Appointment</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:09591961691">📞 095919 61691</a></li>
+          <li><a href="https://maps.google.com/?q=Narayana+Dental+Clinic+Bommanahalli" target="_blank">📍 Hosur Road, Bommanahalli</a></li>
+          <li style="color:rgba(255,255,255,.5);font-size:13px;margin-top:.5rem">Mon–Fri: 9:30 AM – 7:30 PM</li>
+          <li style="color:rgba(255,255,255,.5);font-size:13px">Sat: 9:30 AM – 6:00 PM</li>
+          <li style="color:rgba(255,255,255,.5);font-size:13px">Sun: 10:00 AM – 2:00 PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Narayana Dental Clinic, Bommanahalli, Bengaluru. All rights reserved.</p>
+      <div class="footer-badge">⭐ 4.9 on Google · 398 reviews</div>
+    </div>
+  </div>
+</footer>
+
+<!-- ========== STICKY MOBILE BAR ========== -->
+<div class="sticky-bar" id="stickyBar" style="display:none">
+  <a href="tel:09591961691" class="btn btn-outline" style="text-decoration:none">📞 Call</a>
+  <button class="btn btn-green" onclick="document.getElementById('appointment').scrollIntoView({behavior:'smooth'});document.getElementById('stickyBar').style.display='none'">📅 Book Now</button>
+</div>
+
+<!-- ========== JAVASCRIPT ========== -->
+<script>
+  /* Navbar scroll effect */
+  window.addEventListener('scroll', () => {
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 20);
+  });
+
+  /* Mobile menu */
+  function toggleMenu(){
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+  function closeMenu(){
+    document.getElementById('mobileMenu').classList.remove('open');
+  }
+
+  /* Sticky bar on mobile */
+  if(window.innerWidth <= 640){
+    setTimeout(()=>{
+      const sb=document.getElementById('stickyBar');
+      sb.style.display='flex';
+      document.body.style.paddingBottom='72px';
+    },2000);
+  }
+
+  /* Scroll animations */
+  const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){ e.target.classList.add('visible'); observer.unobserve(e.target); }
+    });
+  },{threshold:0.12});
+  document.querySelectorAll('.fade-up').forEach(el=>observer.observe(el));
+
+  /* FAQ toggle */
+  function toggleFaq(el){
+    el.classList.toggle('open');
+  }
+
+  /* Booking form */
+  let selTime = '';
+
+  function pickTime(el){
+    document.querySelectorAll('.ts:not(.booked)').forEach(t=>t.classList.remove('sel'));
+    el.classList.add('sel');
+    selTime = el.textContent.trim();
+  }
+
+  function toStep2(){
+    const n=document.getElementById('f-name').value.trim();
+    const p=document.getElementById('f-phone').value.trim();
+    const s=document.getElementById('f-service').value;
+    if(!n){alert('Please enter your name.');return;}
+    if(!p){alert('Please enter your phone number.');return;}
+    if(!s){alert('Please select a service.');return;}
+    document.getElementById('s1').style.display='none';
+    document.getElementById('s2').style.display='block';
+    document.getElementById('tab1').className='form-step-tab done';
+    document.getElementById('tab2').className='form-step-tab active';
+    const today=new Date().toISOString().split('T')[0];
+    document.getElementById('f-date').min=today;
+    if(!document.getElementById('f-date').value) document.getElementById('f-date').value=today;
+  }
+
+  function toStep1(){
+    document.getElementById('s1').style.display='block';
+    document.getElementById('s2').style.display='none';
+    document.getElementById('tab1').className='form-step-tab active';
+    document.getElementById('tab2').className='form-step-tab';
+  }
+
+  function toStep2back(){
+    document.getElementById('s2').style.display='block';
+    document.getElementById('s3').style.display='none';
+    document.getElementById('tab2').className='form-step-tab active';
+    document.getElementById('tab3').className='form-step-tab';
+  }
+
+  function toStep3(){
+    if(!document.getElementById('f-date').value){alert('Please select a date.');return;}
+    if(!selTime){alert('Please select a time slot.');return;}
+    const dv=document.getElementById('f-date').value;
+    const dateStr=new Date(dv+'T12:00:00').toLocaleDateString('en-IN',{weekday:'long',year:'numeric',month:'long',day:'numeric'});
+    document.getElementById('su-name').textContent=document.getElementById('f-name').value;
+    document.getElementById('su-phone').textContent=document.getElementById('f-phone').value;
+    document.getElementById('su-service').textContent=document.getElementById('f-service').value;
+    document.getElementById('su-date').textContent=dateStr;
+    document.getElementById('su-time').textContent=selTime;
+    document.getElementById('su-type').textContent=document.getElementById('f-type').value;
+    document.getElementById('s2').style.display='none';
+    document.getElementById('s3').style.display='block';
+    document.getElementById('tab2').className='form-step-tab done';
+    document.getElementById('tab3').className='form-step-tab active';
+  }
+
+  function confirmBooking(){
+    document.getElementById('successBox').style.display='block';
+    document.getElementById('su-phone2').textContent=document.getElementById('f-phone').value;
+    document.getElementById('confirmBtn').style.display='none';
+    document.querySelector('#s3 .step-nav').style.display='none';
+  }
+
+  function resetForm(){
+    ['f-name','f-phone','f-email','f-age','f-notes'].forEach(id=>document.getElementById(id).value='');
+    document.getElementById('f-service').value='';
+    selTime='';
+    document.querySelectorAll('.ts').forEach(t=>t.classList.remove('sel'));
+    document.getElementById('s3').style.display='none';
+    document.getElementById('s1').style.display='block';
+    document.getElementById('tab1').className='form-step-tab active';
+    document.getElementById('tab2').className='form-step-tab';
+    document.getElementById('tab3').className='form-step-tab';
+    document.getElementById('successBox').style.display='none';
+    document.getElementById('confirmBtn').style.display='';
+    document.querySelector('#s3 .step-nav').style.display='';
+  }
+</script>
+</body>
+</html>
